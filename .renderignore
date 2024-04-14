@@ -1,0 +1,45 @@
+# Renderignore - Files excluded from Render builds
+
+# Version control
+.git
+.gitignore
+
+# Dependencies (installed during build)
+node_modules
+*/node_modules
+
+# Environment files (should use dashboard vars)
+.env.local
+.env.*.local
+
+# Build files (rebuilt on each deploy)
+dist
+build
+*/dist
+*/build
+
+# Development files
+.DS_Store
+*.log
+*.pem
+
+# IDE configurations
+.vscode
+.idea
+*.sublime-*
+
+# Testing
+coverage
+.nyc_output
+test
+
+# Documentation (not needed for runtime)
+*.md
+docs
+
+# Development dependencies (optional to exclude)
+# Uncomment if needed:
+# .env
+# nodemon.json
+# .prettierrc
+# .eslintrc
